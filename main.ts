@@ -148,9 +148,9 @@ namespace IotLoRaNode {
         /**
         * First we need to configure the serial port to use the pins and reset the radio
         */
-        pins.digitalWritePin(DigitalPin.P0, 1) //P16 changed to P0
+        pins.digitalWritePin(DigitalPin.C17, 1) //P16 changed to // Rikard Daniel: P0 changed to C17 --> Tx channel on Calliope 
         basic.pause(300)
-        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.C17, 0)
         serial.readLine()
         serial.readLine()
         serial.readLine()
@@ -209,9 +209,9 @@ namespace IotLoRaNode {
         /**
         * First we need to configure the serial port to use the pins and reset the radio
         */
-        pins.digitalWritePin(DigitalPin.P0, 1)
+        pins.digitalWritePin(DigitalPin.C17, 1)
         basic.pause(300)
-        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.C17, 0)
         serial.readLine()
         serial.readLine()
         serial.readLine()
@@ -412,9 +412,9 @@ namespace IotLoRaNode {
          */
 
         basic.showIcon(IconNames.SmallDiamond)
-        pins.digitalWritePin(DigitalPin.P0, 1)
+        pins.digitalWritePin(DigitalPin.C17, 1)
         basic.pause(300)
-        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.C17, 0)
         //basic.showIcon(IconNames.SmallDiamond)
         serial.readLine()
         serial.readLine()
@@ -424,9 +424,9 @@ namespace IotLoRaNode {
         serial.writeString("at+band=" + regionsList[regionVal] + "\r\n");
         serial.readUntil(serial.delimiters(Delimiters.NewLine))
         basic.showIcon(IconNames.Diamond)
-        pins.digitalWritePin(DigitalPin.P0, 1)
+        pins.digitalWritePin(DigitalPin.C17, 1)
         basic.pause(300)
-        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.C17, 0)
         serial.readLine()
         serial.readLine()
         serial.readLine()
@@ -541,9 +541,9 @@ namespace IotLoRaNode {
         /**
         * First we need to configure the serial port to use the pins and reset the radio
         */
-        pins.digitalWritePin(DigitalPin.P0, 1)
+        pins.digitalWritePin(DigitalPin.C17, 1)
         basic.pause(300)
-        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.C17, 0)
         serial.readLine()
         serial.readLine()
         serial.readLine()
