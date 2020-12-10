@@ -1,3 +1,9 @@
+Todo:
+[] check for Pins Tx and Rx on Microbit
+[] where Pins have to be changed? In redirect (https://makecode.microbit.org/reference/serial/redirect) and the rest of the code?
+[] what is the Boud Rate of Micro:Bit, PiSupply IoT Lora Node (https://makecode.microbit.org/pkg/pisupply/pxt-iot-lora-node) vs Seed Studio Lora Node?
+[]
+
 
 > Diese Seite bei [https://mkleinsb.github.io/pxt-iot-lora-node-calliope/](https://mkleinsb.github.io/pxt-iot-lora-node-calliope/) öffnen
 
