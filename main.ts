@@ -138,7 +138,7 @@ enum ADCPins {
 
 
 namespace IotLoRaNode {
-    serial.redirect(C17, C16, BaudRate.BaudRate115200); // C16/C17
+    serial.redirect(SerialPin.C17, SerialPin.C16, BaudRate.BaudRate115200); // C16/C17
     // C16/C17 serial.redirect(9, 15, BaudRate.BaudRate115200) (https://makecode.microbit.org/reference/serial/redirect)
     // def serial.redirect(tx: SerialPin, rx: SerialPin, rate: BaudRate): None
     // on Calliope rx = C16, tx = C17
@@ -201,6 +201,8 @@ namespace IotLoRaNode {
         serial.writeString("at+join=abp\r\n");
         serial.readLine()
 
+        //Show Version of code.
+        basic.showString("V1")
         //Display on the screen that LoRa is ready.
         basic.showString("LoRa Ready")
 
