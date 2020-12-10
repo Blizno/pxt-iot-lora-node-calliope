@@ -202,7 +202,7 @@ namespace IotLoRaNode {
         serial.readLine()
 
         //Show Version of code.
-        basic.showString("V1")
+        basic.showString("ABP V1")
         //Display on the screen that LoRa is ready.
         //basic.showString("LoRa Ready")
 
@@ -264,7 +264,8 @@ namespace IotLoRaNode {
         serial.readLine()
 
         //Display on the screen that LoRa is ready.
-        basic.showString("LoRa Ready")
+        //basic.showString("LoRa Ready")
+        basic.showString("OTAA LoRa Ready")
 
 
     }
