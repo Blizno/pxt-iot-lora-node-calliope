@@ -204,7 +204,7 @@ namespace IotLoRaNode {
         //Show Version of code.
         basic.showString("V1")
         //Display on the screen that LoRa is ready.
-        basic.showString("LoRa Ready")
+        //basic.showString("LoRa Ready")
 
 
     }
