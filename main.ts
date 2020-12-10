@@ -138,7 +138,10 @@ enum ADCPins {
 
 
 namespace IotLoRaNode {
-    serial.redirect(9, 15, BaudRate.BaudRate115200); // C16/C17
+    serial.redirect(9, 15, BaudRate.BaudRate115200); // C16/C17 serial.redirect(9, 15, BaudRate.BaudRate115200) (https://makecode.microbit.org/reference/serial/redirect)
+    // def serial.redirect(tx: SerialPin, rx: SerialPin, rate: BaudRate): None
+    // on Calliope rx = C16, tx = C17
+    // Rikard: changed serial.redirect(9, 15, BaudRate.BaudRate115200) to serial.redirect(C17, C16, BaudRate.BaudRate115200)
     let payload = ""
     let regionsList: string[] = ["EU868", "US915", "AU915", "AS920"]
 
